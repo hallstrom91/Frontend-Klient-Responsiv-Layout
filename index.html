@@ -7,30 +7,61 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>LOGO</header>
-
+    <!--Header and Logo-->
+    <header>
+      <img src="images/Layout3.png" alt="KJS-Webdevelopment" id="headerlogo" />
+    </header>
+    <!--Navigation and Menu-->
+    <!--Lägg till sticky-effect + responsiv-->
     <nav>
       <div class="navbar">
-        <div class="container navbar">
-          <input class="checkbox" type="checkbox" />
-          <div class="hamburger-lines">
-            <span class="line1"></span>
-            <span class="line2"></span>
-            <span class="line3"></span>
-          </div>
-          <div class="logo">
-            <h1>Navbar</h1>
-          </div>
-          <div class="menu-items">
-            <li><a href="/">Hem</a></li>
-            <li><a href="/">Om Mig</a></li>
-            <li><a href="/">Kontakt</a></li>
-          </div>
-        </div>
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox" class="checkbtn">&#9776;</label>
+        <label class="logo">KJS</label>
+        <ul>
+          <li><a href="/">Hem</a></li>
+          <li><a href="/">Om Mig</a></li>
+          <li><a href="/">Kontakt</a></li>
+          <li><a href="/">Tutorials</a></li>
+        </ul>
       </div>
     </nav>
-
-    <div id="container">Content</div>
-    <div id="footnotes">Copyright</div>
+    <!--Page Content-->
+    <div class="content-wrapper">
+      <div class="grid-contentOne">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
+          laborum nemo non ipsam nobis, pariatur architecto eligendi officiis
+          dolor incidunt eveniet quidem nam delectus aut dolores possimus ea
+          ducimus ad. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Fuga itaque voluptates doloribus non, harum debitis ducimus
+          praesentium vel blanditiis ad quam officiis commodi deleniti quia
+          possimus tempora! Velit, nihil dicta. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Tenetur inventore laborum similique
+          porro omnis temporibus, atque quam suscipit consequatur doloribus eos
+          ab distinctio incidunt dolorum laboriosam eum nemo quas consequuntur!
+        </p>
+      </div>
+      <div class="grid-contentTwo">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+          optio, earum dolore possimus exercitationem ea molestias nobis dolorem
+          illo in praesentium voluptas maiores quia sit id itaque autem, magni
+          blanditiis! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Porro, itaque facilis quia officiis minus eum animi ex? Saepe, sit.
+          Dolorem fugit harum totam, vitae sint necessitatibus? Quia quaerat
+          deserunt eius? Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Tempora iusto eum dolore fugiat nemo laboriosam voluptatibus
+          voluptatum eveniet reiciendis illo, non unde, vero sunt magnam
+          dolorem, ab explicabo. Iste, placeat.
+        </p>
+      </div>
+    </div>
+    <!--Footer-->
+    <div class="footer-wrapper">
+      <div class="grid-footer">
+        <h4>Copyright KJS WebDev - 2023</h4>
+      </div>
+    </div>
   </body>
 </html>
