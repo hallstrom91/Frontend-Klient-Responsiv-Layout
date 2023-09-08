@@ -134,17 +134,29 @@ Container Body
 }
 
 .grid-contentOne {
-  background-color: rgb(218, 122, 122);
+  background-color: whitesmoke;
   text-align: center;
   grid-column: 1 / 3;
-  grid-row: 1 / 3;
+  grid-row: 1 / 5;
+  border-right: 2px solid black;
+  padding: 15px;
 }
 
 .grid-contentTwo {
-  background-color: rgb(237, 16, 16);
+  background-color: whitesmoke;
   text-align: center;
-  grid-column: 1 / 3;
-  grid-row: 3;
+  grid-column: 3;
+  grid-row: 1 / 2;
+  border-bottom: 2px solid black;
+  padding: 15px;
+}
+
+.grid-contentThree {
+  background-color: whitesmoke;
+  text-align: center;
+  grid-column: 3;
+  grid-row: 2 / 5;
+  padding: 15px;
 }
 
 /*
