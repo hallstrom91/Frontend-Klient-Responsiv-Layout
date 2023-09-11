@@ -70,13 +70,8 @@ nav ul li a {
   font-family: "poppins";
 }
 
-.logo {
-  color: whitesmoke;
-  font-size: 24px;
-  line-height: 50px;
-  padding: 0 10px;
-  font-weight: bold;
-  font-family: "poppins";
+nav ul li a {
+  font-size: 16px;
 }
 
 a:active,
@@ -85,6 +80,16 @@ a:hover {
   transition: 0.5s;
 }
 
+/*.logo {
+  color: whitesmoke;
+  font-size: 24px;
+  line-height: 50px;
+  padding: 0 10px;
+  font-weight: bold;
+  font-family: "poppins";
+}*/
+
+/*
 .checkbtn {
   font-size: 30px;
   color: whitesmoke;
@@ -98,7 +103,7 @@ a:hover {
 #check {
   display: none;
 }
-/*
+
 @media (max-width: 768px) {
   label.logo {
     font-size: 26px;
@@ -113,13 +118,10 @@ a:hover {
 }
 */
 
-nav ul li a {
-  font-size: 16px;
-}
-
+/*
 input[type="checkbox"] {
   display: none;
-}
+}*/
 
 /*
 =============
