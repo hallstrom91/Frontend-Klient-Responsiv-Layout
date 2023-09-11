@@ -11,6 +11,7 @@ The Tutorials I have watched and used for my school-project
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
 <br>
 https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template
+<br>
 
 - Navigation-Bars:<br>
 https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/
