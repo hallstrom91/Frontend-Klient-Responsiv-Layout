@@ -80,52 +80,9 @@ a:hover {
   transition: 0.5s;
 }
 
-/*.logo {
-  color: whitesmoke;
-  font-size: 24px;
-  line-height: 50px;
-  padding: 0 10px;
-  font-weight: bold;
-  font-family: "poppins";
-}*/
-
-/*
-.checkbtn {
-  font-size: 30px;
-  color: whitesmoke;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-
-#check {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  label.logo {
-    font-size: 26px;
-    padding-left: 50px;
-  }
-}
-
-@media (max-width: 768px) {
-  .checkbtn {
-    display: block;
-  }
-}
-*/
-
-/*
-input[type="checkbox"] {
-  display: none;
-}*/
-
 /*
 =============
-Container Body
+Body - Container
 =============
 */
 .content-wrapper {
