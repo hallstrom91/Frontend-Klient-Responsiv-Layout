@@ -12,7 +12,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout<br>
 https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template<br>
 
 - Navigation-Bars:<br>
-https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/
+https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/<br>
 
 https://www.codingnepalweb.com/responsive-navigation-menu-bar-html-css/ (BAD, DONT WORK PROPERPLY)<br>
 https://codepen.io/jo_Geek/pen/xgbaEr
