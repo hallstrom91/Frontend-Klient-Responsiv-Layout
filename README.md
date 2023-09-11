@@ -7,11 +7,11 @@ All images used in this project are made from gencraft.com and are only used for
 # Code Tutorials
 The Tutorials I have watched and used for my school-project
 
-#Grid-Layout
+- Grid-Layout:
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
 https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template
 
-#Navigation-Bars
+- Navigation-Bars:
 https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/
 https://www.codingnepalweb.com/responsive-navigation-menu-bar-html-css/ (BAD, DONT WORK PROPERPLY)
 https://codepen.io/jo_Geek/pen/xgbaEr
