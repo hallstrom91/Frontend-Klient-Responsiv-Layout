@@ -27,6 +27,7 @@ Header / Logo
 header {
   margin-bottom: 0;
   display: flex;
+  width: 100%;
 }
 #headerlogo {
   width: 100%;
@@ -81,13 +82,27 @@ a:hover {
 }
 
 /*
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked {
+  display: block;
+}*/
+
+@media (max-width: 600px) (hover: none) {
+  .nav-links a:active {
+    background-color: #b5b5b5;
+  }
+}
+
+/*
 =============
 Body - Container
 =============
 */
 .content-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1 fr);
+  grid-template-columns: repeat(3, 1);
   grid-auto-rows: minmax(200px, auto);
   background-color: whitesmoke;
 }
