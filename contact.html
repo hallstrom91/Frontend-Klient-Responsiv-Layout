@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive - Kontakt</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="temporary_css_style.css" />
   </head>
   <body>
     <!--Header and Logo-->
@@ -16,87 +20,43 @@
       />
     </header>
     <!--Navigation and Menu-->
-    <!--Lägg till sticky-effect + responsiv-->
-    <nav>
-      <div class="navbar">
-        <!--<input type="checkbox" id="checkbox" />
-        <label for="checkbox" class="checkbtn"></label>-->
-        <!--<label class="logo">Remove?</label>-->
-        <ul>
-          <li><a href="index.html">Hem</a></li>
-          <li><a href="about_me.html">Om Mig</a></li>
-          <li><a href="contact.html">Kontakt</a></li>
-          <li><a href="tutorials.html">Tutorials</a></li>
-        </ul>
+    <!--new navbar w bootstrap-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="my_navbar">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav-me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Hem</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_me.html">Om Mig</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Kontakt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tutorials.html">Tutorials</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <!--Page Content-->
-    <div class="content-wrapper">
-      <div class="grid-contentOne">
-        <h1>Kontaktforumlär</h1>
-        <!--Ta bort BR o lägg CSS-styling sen med padding/margin-->
-        <br />
-        <h3>Nedanför kan du kontakta mig om du har några frågor!</h3>
-        <br />
-        <!--Kontaktforumlär Start-->
-        <form class="contact" action="mailto:"></form>
-        <br />
-        <!--Namn Input-->
-        <label for="yourname">Ange ditt namn: </label>
-        <input type="text" name="yourname" placeholder="Vad heter du?" /><br />
-        <!--Email Input-->
-        <label for="email">Ange din e-postadress:</label>
-        <input
-          type="text"
-          pattern=".+@.+\..+"
-          name="email"
-          placeholder="Din Mail"
-          title="Ange en giltig e-postadress."
-        /><br />
-        <!--Message Input-->
-        <label for="message">Ditt meddelanden: </label>
-        <textarea
-          name="message"
-          placeholder="Skriv ditt meddelanden."
-        ></textarea
-        ><br />
-        <!--News Option Input-->
-        <label for="spam">Vill du ha nyhetsbrev?</label>
-        <input type="checkbox" name="spam-mark" value="news">Spam Nyheter</input>
 
-        <!--Submit Button-->
-      </div>
-      <div class="grid-contentTwo">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-          optio, earum dolore possimus exercitationem ea molestias nobis dolorem
-          illo in praesentium voluptas maiores quia sit id itaque autem, magni
-          blanditiis! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Porro, itaque facilis quia officiis minus eum animi ex? Saepe, sit.
-          Dolorem fugit harum totam, vitae sint necessitatibus? Quia quaerat
-          deserunt eius? Lorem ipsum dolor sit, amet consectetur adipisicing
-          elit. Tempora iusto eum dolore fugiat nemo laboriosam voluptatibus
-          voluptatum eveniet reiciendis illo, non unde, vero sunt magnam
-          dolorem, ab explicabo. Iste, placeat.
-        </p>
-      </div>
-      <div class="grid-contentThree">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus
-          esse excepturi porro odio inventore, magnam corporis officiis in, quam
-          veritatis dicta dolorum atque perspiciatis optio animi, neque ab natus
-          culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Tempore iusto hic commodi repellat eligendi, ipsum sed, id quidem
-          expedita, laboriosam pariatur placeat doloremque. Quia adipisci
-          cupiditate perferendis animi assumenda dolore.
-        </p>
-      </div>
-    </div>
     <!--Footer-->
-    <div class="footer-wrapper">
-      <div class="grid-footer">
-        <h4>Copyright KJS WebDev - 2023</h4>
-      </div>
-    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
