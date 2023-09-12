@@ -33,20 +33,38 @@
     <!--Page Content-->
     <div class="content-wrapper">
       <div class="grid-contentOne">
-        <h1>Kontakt-Formulär</h1>
+        <h1>Kontaktforumlär</h1>
+        <!--Ta bort BR o lägg CSS-styling sen med padding/margin-->
         <br />
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
-          laborum nemo non ipsam nobis, pariatur architecto eligendi officiis
-          dolor incidunt eveniet quidem nam delectus aut dolores possimus ea
-          ducimus ad. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Fuga itaque voluptates doloribus non, harum debitis ducimus
-          praesentium vel blanditiis ad quam officiis commodi deleniti quia
-          possimus tempora! Velit, nihil dicta. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Tenetur inventore laborum similique
-          porro omnis temporibus, atque quam suscipit consequatur doloribus eos
-          ab distinctio incidunt dolorum laboriosam eum nemo quas consequuntur!
-        </p>
+        <h3>Nedanför kan du kontakta mig om du har några frågor!</h3>
+        <br />
+        <!--Kontaktforumlär Start-->
+        <form class="contact" action="mailto:"></form>
+        <br />
+        <!--Namn Input-->
+        <label for="yourname">Ange ditt namn: </label>
+        <input type="text" name="yourname" placeholder="Vad heter du?" /><br />
+        <!--Email Input-->
+        <label for="email">Ange din e-postadress:</label>
+        <input
+          type="text"
+          pattern=".+@.+\..+"
+          name="email"
+          placeholder="Din Mail"
+          title="Ange en giltig e-postadress."
+        /><br />
+        <!--Message Input-->
+        <label for="message">Ditt meddelanden: </label>
+        <textarea
+          name="message"
+          placeholder="Skriv ditt meddelanden."
+        ></textarea
+        ><br />
+        <!--News Option Input-->
+        <label for="spam">Vill du ha nyhetsbrev?</label>
+        <input type="checkbox" name="spam-mark" value="news">Spam Nyheter</input>
+
+        <!--Submit Button-->
       </div>
       <div class="grid-contentTwo">
         <p>

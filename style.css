@@ -15,7 +15,6 @@ Generellt
   margin: 0;
   padding: 0;
   text-decoration: none;
-  list-style-type: none;
   box-sizing: border-box;
 }
 
@@ -27,8 +26,8 @@ Header / Logo
 header {
   margin-bottom: 0;
   display: flex;
-  width: 100%;
 }
+
 #headerlogo {
   width: 100%;
   height: 250px;
@@ -60,6 +59,7 @@ nav ul li {
   display: inline-block;
   line-height: 50px;
   margin: 0 5px;
+  list-style-type: none;
 }
 
 nav ul li a {
@@ -81,6 +81,12 @@ a:hover {
   transition: 0.5s;
 }
 
+@media (max-width: 768px), (hover: none) {
+  .nav-links a:active {
+    background-color: #b5b5b5;
+  }
+}
+
 /*
 input[type="checkbox"] {
   display: none;
@@ -88,12 +94,6 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked {
   display: block;
 }*/
-
-@media (max-width: 600px) (hover: none) {
-  .nav-links a:active {
-    background-color: #b5b5b5;
-  }
-}
 
 /*
 =============
@@ -125,6 +125,11 @@ Body - Container
   padding: 15px;
 }
 
+.grid-contentTwo ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
 .grid-contentThree {
   background-color: whitesmoke;
   text-align: center;
@@ -145,6 +150,7 @@ Footer
   grid-auto-rows: minmax(50px, auto);
   background-color: #313131;
 }
+
 .grid-footer {
   padding-top: 25px;
   text-align: center;
