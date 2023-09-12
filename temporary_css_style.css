@@ -5,9 +5,14 @@ General
 */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 header {
+  margin-bottom: 0;
   display: flex;
-  width: 100%;
 }
 
 #headerlogo {
@@ -17,36 +22,82 @@ header {
 
 /*
 ===========
-BS navbar-testing
+New Navbar! Implementera när BS-Grid är klart oxå.
 ===========
 */
 
-#my_navbar {
-  user-select: none;
-  display: flex;
-  padding-top: 3px;
-  float: right;
-}
-
-nav ul {
-  background: #313131;
-  width: 100%;
-}
-
 nav ul li {
   list-style-type: none;
-  display: inline-block;
-  padding: 0 8px;
+  display: block;
+  padding: 10px;
+  margin-top: 25px;
   border-radius: 5px;
-  border: 1px solid black;
   text-transform: uppercase;
   font-family: "poppins";
+  width: 200px;
 }
 
 /* padding makes it pop*/
 a:active,
 a:hover {
   background-color: #b5b5b5;
-  transition: 0.25s;
-  padding: 0px 12px;
+  transition: 0.3s;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+@media (max-width: 1024px), (hover: none) {
+}
+
+/*
+===========
+New Layout!
+===========
+*/
+#contentbox_left_backgroundimg {
+  background-image: url(images/background_one.png);
+  background-repeat: no-repeat;
+  color: white;
+  padding-top: 25px;
+  border-right: 2px solid black;
+  height: 768px;
+}
+
+#contentbox_left {
+  background-color: whitesmoke;
+  color: black;
+  height: 768px; /* blir bugg vid mindre skärm */
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-right: 2px solid black;
+  text-align: center;
+}
+#contentbox_right {
+  background-color: whitesmoke;
+  color: black;
+  height: 768px;
+  padding-top: 25px;
+}
+
+#my_list {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-align: left;
+  padding-top: 10px;
+  margin-left: 30%;
+}
+
+/*
+===========
+Footer
+===========
+*/
+#content_footer {
+  height: 50px;
+  background-color: #262626;
+  color: whitesmoke;
+  padding-top: 10px;
+  border-top: 2px solid black;
+  text-align: center;
 }

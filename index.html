@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Respsonsiv - Index</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Index - Personlig Responsiv</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="temporary_css_style.css" />
   </head>
   <body>
     <!--Header and Logo-->
@@ -16,74 +20,93 @@
       />
     </header>
     <!--Navigation and Menu-->
-    <nav>
-      <div class="navbar">
-        <!-- <input type="checkbox" id="check" />
-        <label for="check" class="checkbtn">&#9776;</label>-->
-        <ul class="nav-links">
-          <li><a href="index.html">Hem</a></li>
-          <li><a href="about_me.html">Om Mig</a></li>
-          <li><a href="contact.html">Kontakt</a></li>
-          <li><a href="tutorials.html">Tutorials</a></li>
-        </ul>
+    <nav class="navbar navbar-dark bg-dark" id="my_navbar">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar"
+          aria-controls="offcanvasDarkNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-dark"
+          tabindex="-1"
+          id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel"
+        >
+          <ul class="navbar-nav-me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Hem</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_me.html">Om Mig</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Kontakt</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tutorials.html">Tutorials</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <!--Page Content-->
-    <div class="content-wrapper">
-      <div class="grid-contentOne">
-        <h1>Välkommen</h1>
-        <br />
-        <p>
-          Vad Trevligt att du besöker mitt lilla web-projekt. Här kan du läsa
-          lite om mig som person, kolla vilka guider och tutorials jag använt
-          mig av för att utveckla denna hemsida. Jag är absolut inget proffs i
-          Webbutveckling men jag tycker det är det roligaste
-          programmeringsspårket jag testat (än så länge) och jag ser fram emot
-          att utöka mina kunskaper inom området. Mitt specialintresse är riktat
-          mot säkerhet och kryptering, jag älskar att hålla mina elektroniska
-          enheter säkra mot intrång och jag har även ett intresse för
-          nätverkssäkerhet.
-        </p>
-      </div>
-      <div class="grid-contentTwo">
-        <h3>Tidigare Kurser & Betyg:</h3>
-        <br />
-        <ul>
-          <li>Dator- och Nätverksteknik: Betyg A</li>
-          <li>Datorteknik 1a: Betyg A</li>
-          <li>Datorteknik 1b: Betyg A</li>
-          <li>Digital Kommunikationsteknik: Betyg A</li>
-          <li>Nätverksadministration: Betyg B</li>
-          <li>nätverkssäkerhet: Betyg A</li>
-          <li>Nätverksteknik: Betyg C</li>
-          <li>Nätverksteknologier: Betyg C</li>
-          <li>Programmering 1 (Java): Betyg C</li>
-          <li>Programmering 2 (Python): Betyg C</li>
-          <li>Webbutveckling 1: Betyg A</li>
-          <li>Webbutveckling 2: Betyg A</li>
-          <li>Engelska 5: Betyg B</li>
-          <li>Engelska 6: Betyg A</li>
-          <li>Företagsekonomi 1: Betyg C</li>
-          <li>Företagsekonomi 2: Betyg D</li>
-        </ul>
-      </div>
-      <div class="grid-contentThree">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus
-          esse excepturi porro odio inventore, magnam corporis officiis in, quam
-          veritatis dicta dolorum atque perspiciatis optio animi, neque ab natus
-          culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Tempore iusto hic commodi repellat eligendi, ipsum sed, id quidem
-          expedita, laboriosam pariatur placeat doloremque. Quia adipisci
-          cupiditate perferendis animi assumenda dolore.
-        </p>
+    <!--Body Content-->
+    <div class="container-fluid text-center">
+      <div class="row">
+        <!--Left Content Box-->
+        <div class="col" id="contentbox_left">
+          <h3>Välkommen!</h3>
+          <p>
+            Vad Trevligt att du besöker mitt lilla web-projekt. Här kan du läsa
+            lite om mig som person, kolla vilka guider och tutorials jag använt
+            mig av för att utveckla denna hemsida. Jag är absolut inget proffs i
+            Webbutveckling (än) men jag tycker det är det roligaste
+            programmeringsspårket jag testat (än så länge) och jag ser fram emot
+            att utöka mina kunskaper inom området. Mitt specialintresse är
+            riktat mot säkerhet och kryptering, jag älskar att hålla mina
+            elektroniska enheter säkra mot intrång och jag har även ett intresse
+            för nätverkssäkerhet och har därför sökt just denna utbildning som
+            frontendutvecklare inriktning webbsäkerhet.
+          </p>
+        </div>
+        <!--Right Content Box-->
+        <!--Fixa responsiv layout bugg-->
+        <div class="col" id="contentbox_right">
+          <h3>Tidigare Kurser & Betyg:</h3>
+          <ul id="my_list">
+            <li>Dator- och Nätverksteknik: Betyg A</li>
+            <li>Datorteknik 1a: Betyg A</li>
+            <li>Datorteknik 1b: Betyg A</li>
+            <li>Digital Kommunikationsteknik: Betyg A</li>
+            <li>Nätverksadministration: Betyg B</li>
+            <li>nätverkssäkerhet: Betyg A</li>
+            <li>Nätverksteknik: Betyg C</li>
+            <li>Nätverksteknologier: Betyg C</li>
+            <li>Programmering 1 (Java): Betyg C</li>
+            <li>Programmering 2 (Python): Betyg C</li>
+            <li>Webbutveckling 1: Betyg A</li>
+            <li>Webbutveckling 2: Betyg A</li>
+            <li>Engelska 5: Betyg B</li>
+            <li>Engelska 6: Betyg A</li>
+            <li>Företagsekonomi 1: Betyg C</li>
+            <li>Företagsekonomi 2: Betyg D</li>
+          </ul>
+        </div>
       </div>
     </div>
+
     <!--Footer-->
-    <div class="footer-wrapper">
-      <div class="grid-footer">
-        <h4>Copyright KJS WebDev - 2023</h4>
-      </div>
+    <div class="container-fluid" id="content_footer">
+      <h5>Copyright KJS - 2023</h5>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

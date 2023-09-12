@@ -51,7 +51,6 @@ nav {
 }
 
 nav ul {
-  float: right;
   background: #313131;
   width: 100%;
 }
@@ -81,7 +80,7 @@ a:hover {
   background-color: #b5b5b5;
   transition: 0.5s;
 }
-/*
+/* Tar bort transition på mobil
 @media (max-width: 768px), (hover: none) {
   .nav-links a:active {
     background-color: #b5b5b5;
