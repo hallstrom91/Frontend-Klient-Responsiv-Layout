@@ -20,6 +20,10 @@ header {
   height: 250px;
 }
 
+body {
+  background-color: whitesmoke;
+}
+
 /*
 ===========
 New Navbar! Implementera när BS-Grid är klart oxå.
@@ -46,6 +50,7 @@ a:hover {
   padding-left: 20px;
 }
 
+/*removes mobile-hover effect*/
 @media (max-width: 1024px), (hover: none) {
 }
 
@@ -60,32 +65,42 @@ New Layout!
   color: white;
   padding-top: 25px;
   border-right: 2px solid black;
-  height: 768px;
 }
 
 #contentbox_left {
   background-color: whitesmoke;
   color: black;
-  height: 768px; /* blir bugg vid mindre skärm */
   padding-top: 25px;
   padding-left: 50px;
   padding-right: 50px;
   border-right: 2px solid black;
   text-align: center;
 }
+
+#contentbox_left_index {
+  background-color: whitesmoke;
+  color: black;
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+
 #contentbox_right {
   background-color: whitesmoke;
   color: black;
-  height: 768px;
   padding-top: 25px;
 }
 
 #my_list {
   list-style-type: disc;
   list-style-position: inside;
-  text-align: left;
   padding-top: 10px;
-  margin-left: 30%;
+}
+
+#my_list li a {
+  text-decoration: none;
+  color: black;
 }
 
 /*
