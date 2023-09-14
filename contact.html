@@ -9,6 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="temporary_css_style.css" />
+    <script src="main.js"></script>
   </head>
   <body>
     <!--Header and Logo-->
@@ -65,7 +66,47 @@
         </div>
         <!--Right Content Box-->
         <div class="col" id="contentbox_right">
-          <h3>Fixa Kontaktforumlär här!</h3>
+          <h3>Kontaktforumlär</h3>
+          <p>
+            Om du har några frågor eller bara vill spamma mig så vänligen fyll i
+            formuläret nedanför!
+          </p>
+          <div class="row g-3">
+            <div class="col">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Förnamn"
+                aria-label="First name"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Efternamn"
+                aria-label="Last name"
+              />
+            </div>
+            <div class="col-md-12">
+              <input
+                type="email"
+                class="form-control"
+                id="inputEmail4"
+                placeholder="E-post"
+              />
+            </div>
+            <div class="input-group">
+              <span class="input-group-text">Meddelande:</span>
+              <textarea
+                class="form-control"
+                aria-label="With textarea"
+              ></textarea>
+            </div>
+            <div class="col-auto" id="submit_button">
+              <button type="submit" class="btn btn-primary">Skicka</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

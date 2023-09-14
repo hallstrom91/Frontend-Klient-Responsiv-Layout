@@ -113,6 +113,10 @@ Layout
   padding-top: 25px;
 }
 
+#submit_button {
+  padding-bottom: 25vh;
+}
+
 #my_list {
   list-style-type: disc;
   list-style-position: inside;
@@ -134,7 +138,7 @@ Layout
 
 #bootstrap_pic {
   border: 1px solid black;
-  height: 15vw;
+  height: 25vh;
   width: 25vw;
 }
 
@@ -144,7 +148,7 @@ Layout
 }
 .my_photos {
   border: 1px solid black;
-  height: 20vw;
+  height: 40vh;
   width: 25vw;
 }
 
