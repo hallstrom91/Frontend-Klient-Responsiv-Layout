@@ -58,7 +58,7 @@ Navbar
   margin-top: 25px;
   border-radius: 5px;
   text-transform: uppercase;
-  font-family: "poppins";
+  font-family: "poppins", sans-serif;
   width: 200px;
 }
 
@@ -71,8 +71,88 @@ a:hover {
   padding-left: 20px;
 }
 
-/*tar bort hoover effekt på skärmar med mindre än 1024px i upplösning*/
-@media (max-width: 1024px), (hover: none) {
+/*
+===========
+Media Querys
+===========
+*/
+
+/*
+Tar bort hoover effekt på skärmar med mindre än 1024px i upplösning.
+Ändrar margin så listan lägger sig bättre beroende på skärmstorlek.
+*/
+
+/* MQ till mobil*/
+@media (max-width: 600px), (hover: none) {
+  .my_list li a {
+    text-decoration: none;
+    color: black;
+    margin: 25px; /* UL/LI Lägger sig finare med 50px till mobil, */
+  }
+  .my_photos {
+    /* Fotografier blir bättre till mobil-display */
+    border: 1px solid black;
+    height: 25vh;
+    width: 50vw;
+  }
+}
+
+/* MQ till mobil*/
+@media (min-width: 600px), (hover: none) {
+  .my_list li a {
+    text-decoration: none;
+    color: black;
+    margin: 25px; /* UL/LI Lägger sig finare med 50px till mobil, */
+  }
+  .my_photos {
+    /* Fotografier blir bättre till mobil-display */
+    border: 1px solid black;
+    height: 30vh;
+    width: 25vw;
+  }
+}
+
+/* MQ till surfplattor*/
+@media (min-width: 768px), (hover: none) {
+  .my_list li a {
+    text-decoration: none;
+    color: black;
+    margin: 50px; /* UL/LI Lägger sig finare med 25px till surfplatta, */
+  }
+  .my_photos {
+    /* Fotografier blir bättre till surfplatta */
+    border: 1px solid black;
+    height: 30vh;
+    width: 30vw;
+  }
+}
+
+/* MQ till surfplattor/mindre laptops*/
+@media (min-width: 992px), (hover: none) {
+  .my_list li a {
+    text-decoration: none;
+    color: black;
+    margin: 50px; /* UL/LI Lägger sig finare med 25px till surfplatta, */
+  }
+  .my_photos {
+    /* Fotografier blir bättre till surfplatta */
+    border: 1px solid black;
+    height: 20vh;
+    width: 20vw;
+  }
+}
+
+/*MQ till Laptop/Desktop*/
+@media (min-width: 1200px) {
+  .my_list li a {
+    text-decoration: none;
+    color: black;
+  }
+  .my_photos {
+    border: 1px solid black;
+    height: 25vh;
+    width: 20vw;
+  }
 }
 
 /*
@@ -80,6 +160,14 @@ a:hover {
 Layout
 ===========
 */
+#contentbox_left_index {
+  background-color: whitesmoke;
+  color: black;
+  padding-top: 25px;
+  padding-right: 50vw; /* ordna layout t vänster lr mitten?*/
+  text-align: left;
+}
+
 #contentbox_left_backgroundimg {
   background-image: url(images/background_one.png);
   background-repeat: no-repeat;
@@ -98,15 +186,6 @@ Layout
   text-align: center;
 }
 
-#contentbox_left_index {
-  background-color: whitesmoke;
-  color: black;
-  padding-top: 25px;
-  padding-left: 50px;
-  padding-right: 50px;
-  text-align: center;
-}
-
 #contentbox_right {
   background-color: whitesmoke;
   color: black;
@@ -117,18 +196,12 @@ Layout
   padding-bottom: 25vh;
 }
 
-#my_list {
+.my_list {
   list-style-type: disc;
   list-style-position: inside;
   padding-top: 10px;
   padding-left: 18vw;
   text-align: left;
-}
-
-#my_list li a {
-  text-decoration: none;
-  color: black;
-  margin: 50px; /* Lägger sig finare med 50px till mobil */
 }
 
 #bootstrap_logo {
@@ -146,17 +219,13 @@ Layout
   padding-bottom: 25px;
   padding-top: 25px;
 }
-.my_photos {
-  border: 1px solid black;
-  height: 40vh;
-  width: 25vw;
-}
 
 /*
 ===========
 Footer
 ===========
 */
+
 #content_footer {
   height: 50px;
   background-color: #262626;
@@ -167,16 +236,16 @@ Footer
 }
 
 /* 
-Kommentarer kring min kod.
+Generella kommentarer kring min kod.
  
 Jag väljer Class-attributet för element när det ska appliceras på FLERA saker.
 Jag väljer ID-attributet för ett element när det ska appliceras på EN sak.
 Jag har även valt att lägga ID-attribut om det redan finns ett Class-attribut
-kopplat till elementet, som när jag använt bootstrap i layout & navbar.
+kopplat till elementet, som när jag använt bootstrap-classer i layout & navbar.
 
-Till mina bilder har jag valt att använda viewport-width (vw) istället för exempelvis
-pixlar (px) för det ger ett bättre resultat när man använder sidan från en surfplatta 
-eller mobil. 
+Till mina bilder har jag valt att använda viewport-width (vw) och view-height (vh) 
+istället för exempelvis pixlar (px) för det ger ett bättre resultat när man 
+använder sidan från en surfplatta eller mobil. 
 Jag har även använt viewport-width i vissa av mina listor. Det ger bättre responsivt
 resultat och anpassar sig bättre till skärmen än pixlar.
 
