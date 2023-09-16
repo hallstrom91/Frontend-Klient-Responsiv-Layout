@@ -131,15 +131,15 @@ Layout
 
 #bootstrap_pic {
   border: 1px solid black;
-  height: 25vh;
-  width: 25vw;
+  height: 70%;
+  width: 70%;
 }
 
 .private_photos {
   padding-bottom: 25px;
   padding-top: 25px;
 }
-
+/*
 .my_photos {
   height: 50%;
   width: 50%;
@@ -167,16 +167,40 @@ Media Querys
 */
 
 /*
-Tar bort hoover effekt på skärmar med mindre än 1024px i upplösning.
 Ändrar margin så listan lägger sig bättre beroende på skärmstorlek.
 */
 
 /* MQ till mobil*/
-@media screen and(max-width: 1024px) and (min-width: 200px) {
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+  .my_photos {
+    border: 1px solid black;
+    height: 70%;
+    width: 70%;
+  }
+  .my_list {
+    padding-right: 50px; /*listor (UL/LI) lägger sig bättre i vissa mindre upplösningar*/
+    margin: 10px; /*listor (UL/LI) lägger sig bättre i vissa mindre upplösningar*/
+  }
+}
+
+/*MQ Till Surfplattor */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .my_photos {
     border: 1px solid black;
     height: 25vh;
-    width: 50vw;
+    width: 45vw;
+  }
+}
+
+/* MQ till små skärmar och uppåt! */
+@media only screen and (min-width: 1024px) {
+  .my_photos {
+    border: 1px solid black;
+    height: 40vh;
+    width: 25vw;
+  }
+  .my_list {
+    margin-left: 25px; /* lägger listan mer centrerat under h3-rubrik*/
   }
 }
 
