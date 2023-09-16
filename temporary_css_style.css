@@ -63,96 +63,11 @@ Navbar
 }
 
 /* padding makes it pop*/
-a:active,
-a:hover {
+.nav-item {
   background-color: #b5b5b5;
   transition: 0.3s;
   border-radius: 10px;
   padding-left: 20px;
-}
-
-/*
-===========
-Media Querys
-===========
-*/
-
-/*
-Tar bort hoover effekt på skärmar med mindre än 1024px i upplösning.
-Ändrar margin så listan lägger sig bättre beroende på skärmstorlek.
-*/
-
-/* MQ till mobil*/
-@media (max-width: 600px), (hover: none) {
-  .my_list li a {
-    text-decoration: none;
-    color: black;
-    margin: 25px; /* UL/LI Lägger sig finare med 50px till mobil, */
-  }
-  .my_photos {
-    /* Fotografier blir bättre till mobil-display */
-    border: 1px solid black;
-    height: 25vh;
-    width: 50vw;
-  }
-}
-
-/* MQ till mobil*/
-@media (min-width: 600px), (hover: none) {
-  .my_list li a {
-    text-decoration: none;
-    color: black;
-    margin: 25px; /* UL/LI Lägger sig finare med 50px till mobil, */
-  }
-  .my_photos {
-    /* Fotografier blir bättre till mobil-display */
-    border: 1px solid black;
-    height: 30vh;
-    width: 25vw;
-  }
-}
-
-/* MQ till surfplattor*/
-@media (min-width: 768px), (hover: none) {
-  .my_list li a {
-    text-decoration: none;
-    color: black;
-    margin: 50px; /* UL/LI Lägger sig finare med 25px till surfplatta, */
-  }
-  .my_photos {
-    /* Fotografier blir bättre till surfplatta */
-    border: 1px solid black;
-    height: 30vh;
-    width: 30vw;
-  }
-}
-
-/* MQ till surfplattor/mindre laptops*/
-@media (min-width: 992px), (hover: none) {
-  .my_list li a {
-    text-decoration: none;
-    color: black;
-    margin: 50px; /* UL/LI Lägger sig finare med 25px till surfplatta, */
-  }
-  .my_photos {
-    /* Fotografier blir bättre till surfplatta */
-    border: 1px solid black;
-    height: 20vh;
-    width: 20vw;
-  }
-}
-
-/*MQ till Laptop/Desktop*/
-@media (min-width: 1200px) {
-  .my_list li a {
-    text-decoration: none;
-    color: black;
-  }
-  .my_photos {
-    border: 1px solid black;
-    height: 25vh;
-    width: 20vw;
-  }
 }
 
 /*
@@ -204,6 +119,11 @@ Layout
   text-align: left;
 }
 
+.my_list li a {
+  text-decoration: none;
+  color: black;
+}
+
 #bootstrap_logo {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -220,6 +140,11 @@ Layout
   padding-top: 25px;
 }
 
+.my_photos {
+  height: 50%;
+  width: 50%;
+}
+
 /*
 ===========
 Footer
@@ -233,6 +158,26 @@ Footer
   padding-top: 10px;
   border-top: 2px solid black;
   text-align: center;
+}
+
+/*
+===========
+Media Querys
+===========
+*/
+
+/*
+Tar bort hoover effekt på skärmar med mindre än 1024px i upplösning.
+Ändrar margin så listan lägger sig bättre beroende på skärmstorlek.
+*/
+
+/* MQ till mobil*/
+@media screen and(max-width: 1024px) and (min-width: 200px) {
+  .my_photos {
+    border: 1px solid black;
+    height: 25vh;
+    width: 50vw;
+  }
 }
 
 /* 
