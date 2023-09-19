@@ -71,6 +71,7 @@ Layout
 
 #contentbox_left_backgroundimg {
   background-image: url(images/background_one.png);
+  background-size: cover;
   background-repeat: no-repeat;
   color: white;
   padding-top: 25px;
@@ -118,7 +119,7 @@ UL/LI Lists
   list-style-type: disc;
   list-style-position: inside;
   padding-top: 10px;
-  padding-left: 18vw;
+  padding-left: 35%;
   text-align: left;
 }
 
@@ -186,7 +187,7 @@ Media Querys
     padding-left: 15px; /*listor (UL/LI) lägger sig bättre i vissa mindre upplösningar*/
   }
   .my_list_grades {
-    padding-right: 10px; /*listor (UL/LI) lägger sig bättre i vissa mindre upplösningar*/
+    padding-left: 0; /*listor (UL/LI) lägger sig bättre i vissa mindre upplösningar*/
   }
 }
 
