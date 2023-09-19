@@ -20,27 +20,26 @@
       />
     </header>
     <!--Navigation and Menu-->
-    <nav class="navbar navbar-dark bg-dark" id="my_navbar">
+    <nav class="navbar navbar-expand-lg bg-secondary" id="my_navbar">
       <div class="container-fluid">
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasDarkNavbar"
-          aria-controls="offcanvasDarkNavbar"
+          data-bs-toggle="collapse"
+          data-bs-target="#centered_navbar"
+          aria-controls="centered_navbar"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="offcanvas offcanvas-end text-bg-dark"
-          tabindex="-1"
-          id="offcanvasDarkNavbar"
+          class="collapse navbar-collapse justify-content-center"
+          id="centered_navbar"
         >
-          <ul class="navbar-nav-me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Hem</a>
+              <a class="nav-link" href="index.html">Hem</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about_me.html">Om Mig</a>
@@ -49,7 +48,12 @@
               <a class="nav-link" href="contact.html">Kontakt</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tutorials.html">Tutorials</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="tutorials.html"
+                >Tutorials</a
+              >
             </li>
           </ul>
         </div>
