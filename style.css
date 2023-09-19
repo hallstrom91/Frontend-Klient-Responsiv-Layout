@@ -183,8 +183,10 @@ Media Querys
     width: 70%;
   }
   .my_list {
-    padding-right: 50px; /*listor (UL/LI) lägger sig bättre i vissa mindre upplösningar*/
-    margin: 50px; /*listor (UL/LI) lägger sig bättre i vissa mindre upplösningar*/
+    padding-left: 15px; /*listor (UL/LI) lägger sig bättre i vissa mindre upplösningar*/
+  }
+  .my_list_grades {
+    padding-right: 10px; /*listor (UL/LI) lägger sig bättre i vissa mindre upplösningar*/
   }
 }
 
