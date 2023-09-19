@@ -53,9 +53,10 @@ Navbar
 
 #my_navbar ul li {
   list-style-type: none;
-  display: block;
+  display: inline-block;
   padding: 10px;
   margin-top: 25px;
+  margin-left: 25px;
   border-radius: 5px;
   text-transform: uppercase;
   font-family: "poppins", sans-serif;
@@ -65,7 +66,6 @@ Navbar
 /* padding makes it pop*/
 .nav-item {
   background-color: #b5b5b5;
-  transition: 0.3s;
   border-radius: 10px;
   padding-left: 20px;
 }
@@ -95,10 +95,9 @@ Layout
   background-color: whitesmoke;
   color: black;
   padding-top: 25px;
-  padding-left: 50px;
-  padding-right: 50px;
+  text-align: left;
+  padding-right: 20px;
   border-right: 2px solid whitesmoke;
-  text-align: center;
 }
 
 #contentbox_right {
@@ -111,6 +110,11 @@ Layout
   padding-bottom: 25vh;
 }
 
+/*
+===========
+UL/LI Lists
+===========
+*/
 .my_list {
   list-style-type: disc;
   list-style-position: inside;
@@ -124,9 +128,28 @@ Layout
   color: black;
 }
 
+.my_list_grades {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-top: 10px;
+  padding-left: 18vw;
+  text-align: left;
+}
+
+.my_list_grades li {
+  text-decoration: none;
+  color: black;
+}
+/*
+===========
+Pictures
+===========
+*/
+
 #bootstrap_logo {
   padding-top: 25px;
   padding-bottom: 25px;
+  padding-left: 10vw;
 }
 
 #bootstrap_pic {
@@ -138,11 +161,7 @@ Layout
 .private_photos {
   padding-bottom: 25px;
   padding-top: 25px;
-}
-/*
-.my_photos {
-  height: 50%;
-  width: 50%;
+  padding-left: 5rem;
 }
 
 /*
@@ -179,7 +198,7 @@ Media Querys
   }
   .my_list {
     padding-right: 50px; /*listor (UL/LI) lägger sig bättre i vissa mindre upplösningar*/
-    margin: 10px; /*listor (UL/LI) lägger sig bättre i vissa mindre upplösningar*/
+    margin: 50px; /*listor (UL/LI) lägger sig bättre i vissa mindre upplösningar*/
   }
 }
 
@@ -189,6 +208,9 @@ Media Querys
     border: 1px solid black;
     height: 25vh;
     width: 45vw;
+  }
+  .my_list_grades {
+    padding-left: 10vw; /*Bättre positionering vid surfplatta*/
   }
 }
 
